@@ -1,5 +1,46 @@
 # library_insert_summary
-Using tab files generated from SSPACE, this script summarizes the distribution of insert sizes for your libraries for those that fall on the same scaffold (and the proportion that fall on the same scaffold).
+Using tab files generated from SSPACE, this script summarizes the distribution of insert sizes for your libraries based on read pairs  that fall on the same contig (and also gives the number that DON'T fall on the same contig). To run it, get your tab_files.txt file together (described below), save a copy of library_insert_summary.R to the same directory as tab_files.txt, and then run it by:
+```
+Rscript library_insert_summary.R
+```
+It will output a file (time/date stamped just in case you have multiple runs) called library_insert_summary.log. e.g.
+```
+Results from run begun on:
+2018-08-21 16:13:42 NZST
+
+Number of read pairs found on same or different contigs:
+Different       8681037
+Same    28543850
+
+For read pairs found on the same contig...
+The minimum insert size (bp) observed was: 0
+The maximum insert size (bp) observed was: 858587
+The mean insert size (bp) observed was: 7128.20806797261
+The standard deviation of insert size (bp) was: 1939.75727719681
+The median insert size (bp) observed was: 7151
+
+Length distribution of insert sizes for read pairs found on same contig:
+bp count
+0 28543535
+50000 220
+1e+05 59
+150000 18
+2e+05 8
+250000 1
+3e+05 5
+350000 1
+4e+05 1
+450000 0
+5e+05 1
+550000 0
+6e+05 0
+650000 0
+7e+05 0
+750000 0
+8e+05 0
+850000 1
+9e+05 NA
+```
 
 # tab_files.txt
 A list of the tab files corresponding to the library you want to summarize e.g.
