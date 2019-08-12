@@ -57,3 +57,14 @@ The tab files themselves should be formatted without header rows and tab delimit
 flattened_line_12263    35044   35228   flattened_line_12263    26895   26720
 flattened_line_3592     27176   27031   flattened_line_3592     33474   33648
 ```
+
+## Version history
+v0.0 First published in Robin TBD
+
+This script wouldn't be possible without:  
+R: R Core Team. 2015. R: A language and environment for statistical computing. URL http://www.R-project.org/. R Foundation for Statistical Computing, Vienna, Austria. https://www.r-project.org/
+Wickham, H., Hester, J. and Francois, R.,Readr: Read rectangular text data.  
+Wickham, H., Francois, R., Henry, L. and Müller, K., dplyr: A grammar of data manipulation.  
+Henry, L. and Wickham, H., 2017. Functional programming tools
+
+
